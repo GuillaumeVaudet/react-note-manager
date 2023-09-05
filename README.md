@@ -2,6 +2,6 @@
 
 ## Getting Started
 ```bash
-npm i
-npm start
+yarn install
+yarn dev
 ```
