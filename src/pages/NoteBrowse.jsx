@@ -1,5 +1,16 @@
+import TextCard from '../components/TextCard';
+
 const NoteBrowse = () => {
-  return <div>Note Browse</div>
+  return(
+    <div>
+      <TextCard
+        title="Title"
+        subtitle="subtitle"
+        content="content"
+        onClick={ () => alert("click") }
+        onClickTrash={ () => alert("Trash click") }/>
+    </div>
+  )
 }
 
 export default NoteBrowse
