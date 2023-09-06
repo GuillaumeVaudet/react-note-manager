@@ -1,14 +1,9 @@
-import TextCard from '../components/TextCard';
+import NoteList from '../Containers/NoteList';
 
 const NoteBrowse = () => {
   return(
     <div>
-      <TextCard
-        title="Title"
-        subtitle="subtitle"
-        content="content"
-        onClick={ () => alert("click") }
-        onClickTrash={ () => alert("Trash click") }/>
+      <NoteList/>
     </div>
   )
 }
