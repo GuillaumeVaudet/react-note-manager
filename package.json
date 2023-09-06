@@ -4,24 +4,23 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
+    "json-server": "^0.17.3",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-bootstrap-icons": "^1.8.4",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
-    "react-scripts": "5.0.1"
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.0.7"
   },
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev-server": "npx json-server --watch db.json -p 3200"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "lint": "eslint src/**/*.{js,jsx}",
+    "dev-server": "json-server --watch db.json -p 3090"
   },
   "browserslist": {
     "production": [
@@ -34,5 +33,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.0.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2"
   }
 }
